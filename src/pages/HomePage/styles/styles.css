@@ -1,23 +1,23 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-}
-.list-item {
-  font-size: 1rem;
-  text-align: left;
-  padding: 8px 5px;
-  width: 360px;
-}
-.list-item:hover {
-  background-color: rgba(1,1,1,0.1) ;
-  border-radius: 5px;
-}
-.list-wrapper {
-  border-color: rgba(1,1,1,0.1);
-  border-radius: 5px;
-  border-width: 1px;
-  background-color: #e7eff6 ;
-}
+/*.container {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  margin-top: 5rem;*/
+/*}*/
+/*.list-item {*/
+/*  font-size: 1rem;*/
+/*  text-align: left;*/
+/*  padding: 8px 5px;*/
+/*  width: 360px;*/
+/*}*/
+/*.list-item:hover {*/
+/*  background-color: rgba(1,1,1,0.1) ;*/
+/*  border-radius: 5px;*/
+/*}*/
+/*.list-wrapper {*/
+/*  border-color: rgba(1,1,1,0.1);*/
+/*  border-radius: 5px;*/
+/*  border-width: 1px;*/
+/*  background-color: #e7eff6 ;*/
+/*}*/
