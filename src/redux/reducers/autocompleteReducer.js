@@ -1,24 +1,26 @@
-import initialState from 'src/store/InitialStates';
-import injectReducer from 'src/store/InjectReducer';
+import initialState from '../../store/InitialStates';
+import injectReducer from '../../store/InjectReducer';
 
-import {AUTH} from '../types';
+import {GET_DATA, GET_DATA_SUCCESS, GET_DATA_FAILURE} from '../types';
 
 export default injectReducer(initialState, {
-    // Get Confirmation Code
-    [AUTH.GET_CONFIRMATION_CODE]: state => ({
+    // Get data from API
+    [GET_DATA]: state => ({
         ...state,
-        codeSend: false,
+        data: [],
         isRequest: true,
-        errorsData: null,
+        error: null
     }),
-    [AUTH.GET_CONFIRMATION_CODE_SUCCESS]: state => ({
+    [GET_DATA_SUCCESS]: (state, {payload}) => ({
         ...state,
-        codeSend: true,
+        data: payload,
         isRequest: false,
+        error: null
     }),
-    [AUTH.GET_CONFIRMATION_CODE_FAILURE]: state => ({
+    [GET_DATA_FAILURE]: (state, {payload}) => ({
         ...state,
-        codeSend: false,
+        data: [],
         isRequest: false,
+        error: payload
     }),
 });

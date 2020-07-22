@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import autocompleteReducer from './AutocompleteReducer';
+import autocompleteReducer from './autocompleteReducer';
 
 
 const rootReducer = combineReducers({
